@@ -32,7 +32,7 @@
     self.btn.dotColor = [UIColor blackColor];
     self.btn.messageCount = 0;
     self.btn.dotSize = CGSizeMake(10, 10);
-    
+    self.btn.edgeInset = CGPointMake(5, -5);
     [self.view addSubview:self.btn];
     
     [_redDotView attach:self.btn withSeparateBlock:^BOOL(UIView *view) {

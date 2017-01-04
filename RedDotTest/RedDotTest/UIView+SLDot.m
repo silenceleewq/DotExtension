@@ -90,9 +90,12 @@ static char *dotSizeKey = "redDotSize";
     }
 }
 
-- (void)setEdgeInset:(CGSize)edgeInset
+- (void)setEdgeInset:(CGPoint)edgeInset
 {
-    
+    CGRect oldFrame = self.Dot.frame;
+    oldFrame.origin.x = oldFrame.origin.x + edgeInset.x;
+    oldFrame.origin.y = oldFrame.origin.y + edgeInset.y;
+    self.Dot.frame = oldFrame;
 }
 
 @end

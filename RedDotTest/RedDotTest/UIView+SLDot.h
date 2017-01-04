@@ -32,6 +32,6 @@
  positive x value is go right nagetive is go left
  positive y value is go down negative is go up.
  */
-@property (nonatomic, assign) CGSize edgeInset;
+@property (nonatomic, assign) CGPoint edgeInset;
 
 @end
