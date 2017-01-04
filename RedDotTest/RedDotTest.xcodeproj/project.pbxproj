@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00BB7FC91E1B31DF0059FEEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BB7FC81E1B31DF0059FEEA /* main.m */; };
+		00BB7FCC1E1B31DF0059FEEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BB7FCB1E1B31DF0059FEEA /* AppDelegate.m */; };
+		00BB7FCF1E1B31DF0059FEEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BB7FCE1E1B31DF0059FEEA /* ViewController.m */; };
+		00BB7FD21E1B31DF0059FEEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BB7FD01E1B31DF0059FEEA /* Main.storyboard */; };
+		00BB7FD41E1B31DF0059FEEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00BB7FD31E1B31DF0059FEEA /* Assets.xcassets */; };
+		00BB7FD71E1B31DF0059FEEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BB7FD51E1B31DF0059FEEA /* LaunchScreen.storyboard */; };
+		00BB7FE21E1B324E0059FEEA /* RedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BB7FE11E1B324E0059FEEA /* RedDotView.m */; };
+		00BB7FE81E1B32590059FEEA /* red_dot_image_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 00BB7FE31E1B32590059FEEA /* red_dot_image_1.png */; };
+		00BB7FE91E1B32590059FEEA /* red_dot_image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 00BB7FE41E1B32590059FEEA /* red_dot_image_2.png */; };
+		00BB7FEA1E1B32590059FEEA /* red_dot_image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 00BB7FE51E1B32590059FEEA /* red_dot_image_3.png */; };
+		00BB7FEB1E1B32590059FEEA /* red_dot_image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 00BB7FE61E1B32590059FEEA /* red_dot_image_4.png */; };
+		00BB7FEC1E1B32590059FEEA /* red_dot_image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 00BB7FE71E1B32590059FEEA /* red_dot_image_5.png */; };
+		00BB7FFA1E1BA8B30059FEEA /* UIView+SLDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BB7FF91E1BA8B30059FEEA /* UIView+SLDot.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00BB7FC41E1B31DF0059FEEA /* RedDotTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedDotTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00BB7FC81E1B31DF0059FEEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00BB7FCA1E1B31DF0059FEEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		00BB7FCB1E1B31DF0059FEEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		00BB7FCD1E1B31DF0059FEEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		00BB7FCE1E1B31DF0059FEEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		00BB7FD11E1B31DF0059FEEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00BB7FD31E1B31DF0059FEEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00BB7FD61E1B31DF0059FEEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00BB7FD81E1B31DF0059FEEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00BB7FE01E1B324E0059FEEA /* RedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedDotView.h; sourceTree = "<group>"; };
+		00BB7FE11E1B324E0059FEEA /* RedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedDotView.m; sourceTree = "<group>"; };
+		00BB7FE31E1B32590059FEEA /* red_dot_image_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_dot_image_1.png; sourceTree = "<group>"; };
+		00BB7FE41E1B32590059FEEA /* red_dot_image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_dot_image_2.png; sourceTree = "<group>"; };
+		00BB7FE51E1B32590059FEEA /* red_dot_image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_dot_image_3.png; sourceTree = "<group>"; };
+		00BB7FE61E1B32590059FEEA /* red_dot_image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_dot_image_4.png; sourceTree = "<group>"; };
+		00BB7FE71E1B32590059FEEA /* red_dot_image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_dot_image_5.png; sourceTree = "<group>"; };
+		00BB7FF81E1BA8B30059FEEA /* UIView+SLDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SLDot.h"; sourceTree = "<group>"; };
+		00BB7FF91E1BA8B30059FEEA /* UIView+SLDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SLDot.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00BB7FC11E1B31DF0059FEEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00BB7FBB1E1B31DE0059FEEA = {
+			isa = PBXGroup;
+			children = (
+				00BB7FC61E1B31DF0059FEEA /* RedDotTest */,
+				00BB7FC51E1B31DF0059FEEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00BB7FC51E1B31DF0059FEEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00BB7FC41E1B31DF0059FEEA /* RedDotTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00BB7FC61E1B31DF0059FEEA /* RedDotTest */ = {
+			isa = PBXGroup;
+			children = (
+				00BB7FCA1E1B31DF0059FEEA /* AppDelegate.h */,
+				00BB7FCB1E1B31DF0059FEEA /* AppDelegate.m */,
+				00BB7FCD1E1B31DF0059FEEA /* ViewController.h */,
+				00BB7FCE1E1B31DF0059FEEA /* ViewController.m */,
+				00BB7FF81E1BA8B30059FEEA /* UIView+SLDot.h */,
+				00BB7FF91E1BA8B30059FEEA /* UIView+SLDot.m */,
+				00BB7FDE1E1B320D0059FEEA /* RedDot */,
+				00BB7FD01E1B31DF0059FEEA /* Main.storyboard */,
+				00BB7FD31E1B31DF0059FEEA /* Assets.xcassets */,
+				00BB7FD51E1B31DF0059FEEA /* LaunchScreen.storyboard */,
+				00BB7FD81E1B31DF0059FEEA /* Info.plist */,
+				00BB7FC71E1B31DF0059FEEA /* Supporting Files */,
+			);
+			path = RedDotTest;
+			sourceTree = "<group>";
+		};
+		00BB7FC71E1B31DF0059FEEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00BB7FC81E1B31DF0059FEEA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00BB7FDE1E1B320D0059FEEA /* RedDot */ = {
+			isa = PBXGroup;
+			children = (
+				00BB7FE01E1B324E0059FEEA /* RedDotView.h */,
+				00BB7FE11E1B324E0059FEEA /* RedDotView.m */,
+				00BB7FDF1E1B32300059FEEA /* RedDotImage */,
+			);
+			path = RedDot;
+			sourceTree = "<group>";
+		};
+		00BB7FDF1E1B32300059FEEA /* RedDotImage */ = {
+			isa = PBXGroup;
+			children = (
+				00BB7FE31E1B32590059FEEA /* red_dot_image_1.png */,
+				00BB7FE41E1B32590059FEEA /* red_dot_image_2.png */,
+				00BB7FE51E1B32590059FEEA /* red_dot_image_3.png */,
+				00BB7FE61E1B32590059FEEA /* red_dot_image_4.png */,
+				00BB7FE71E1B32590059FEEA /* red_dot_image_5.png */,
+			);
+			path = RedDotImage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00BB7FC31E1B31DF0059FEEA /* RedDotTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00BB7FDB1E1B31DF0059FEEA /* Build configuration list for PBXNativeTarget "RedDotTest" */;
+			buildPhases = (
+				00BB7FC01E1B31DF0059FEEA /* Sources */,
+				00BB7FC11E1B31DF0059FEEA /* Frameworks */,
+				00BB7FC21E1B31DF0059FEEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedDotTest;
+			productName = RedDotTest;
+			productReference = 00BB7FC41E1B31DF0059FEEA /* RedDotTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00BB7FBC1E1B31DE0059FEEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Ninja;
+				TargetAttributes = {
+					00BB7FC31E1B31DF0059FEEA = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = B5G9R9WR6W;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 00BB7FBF1E1B31DE0059FEEA /* Build configuration list for PBXProject "RedDotTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00BB7FBB1E1B31DE0059FEEA;
+			productRefGroup = 00BB7FC51E1B31DF0059FEEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00BB7FC31E1B31DF0059FEEA /* RedDotTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00BB7FC21E1B31DF0059FEEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00BB7FE91E1B32590059FEEA /* red_dot_image_2.png in Resources */,
+				00BB7FD71E1B31DF0059FEEA /* LaunchScreen.storyboard in Resources */,
+				00BB7FE81E1B32590059FEEA /* red_dot_image_1.png in Resources */,
+				00BB7FEB1E1B32590059FEEA /* red_dot_image_4.png in Resources */,
+				00BB7FD41E1B31DF0059FEEA /* Assets.xcassets in Resources */,
+				00BB7FEC1E1B32590059FEEA /* red_dot_image_5.png in Resources */,
+				00BB7FD21E1B31DF0059FEEA /* Main.storyboard in Resources */,
+				00BB7FEA1E1B32590059FEEA /* red_dot_image_3.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00BB7FC01E1B31DF0059FEEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00BB7FE21E1B324E0059FEEA /* RedDotView.m in Sources */,
+				00BB7FCF1E1B31DF0059FEEA /* ViewController.m in Sources */,
+				00BB7FCC1E1B31DF0059FEEA /* AppDelegate.m in Sources */,
+				00BB7FC91E1B31DF0059FEEA /* main.m in Sources */,
+				00BB7FFA1E1BA8B30059FEEA /* UIView+SLDot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		00BB7FD01E1B31DF0059FEEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00BB7FD11E1B31DF0059FEEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00BB7FD51E1B31DF0059FEEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00BB7FD61E1B31DF0059FEEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00BB7FD91E1B31DF0059FEEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		00BB7FDA1E1B31DF0059FEEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00BB7FDC1E1B31DF0059FEEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B5G9R9WR6W;
+				INFOPLIST_FILE = RedDotTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.own.RedDotTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		00BB7FDD1E1B31DF0059FEEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B5G9R9WR6W;
+				INFOPLIST_FILE = RedDotTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.own.RedDotTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00BB7FBF1E1B31DE0059FEEA /* Build configuration list for PBXProject "RedDotTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00BB7FD91E1B31DF0059FEEA /* Debug */,
+				00BB7FDA1E1B31DF0059FEEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00BB7FDB1E1B31DF0059FEEA /* Build configuration list for PBXNativeTarget "RedDotTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00BB7FDC1E1B31DF0059FEEA /* Debug */,
+				00BB7FDD1E1B31DF0059FEEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00BB7FBC1E1B31DE0059FEEA /* Project object */;
+}
