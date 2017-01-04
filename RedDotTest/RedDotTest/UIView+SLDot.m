@@ -12,7 +12,7 @@
 #define defualtDotSize 20
 
 
-static char *messageCountKey = "messageCount";
+static char *dotMessageKey = "dotMessageKey";
 static char *DotKey = "DotKey";
 static char *dotSizeKey = "redDotSize";
 @interface UIView ()
@@ -21,26 +21,19 @@ static char *dotSizeKey = "redDotSize";
 
 @implementation UIView (SLDot)
 
-- (NSInteger)messageCount
+- (NSString *)dotMessage
 {
-    return [objc_getAssociatedObject(self, &messageCountKey) integerValue];
+    return objc_getAssociatedObject(self, &dotMessageKey);
 }
 
-- (void)setMessageCount:(NSInteger)messageCount
+- (void)setDotMessage:(NSString *)dotMessage
 {
-    objc_setAssociatedObject(self, &messageCountKey, @(messageCount), OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, &dotMessageKey, dotMessage, OBJC_ASSOCIATION_ASSIGN);
     
-    //    [self sl_setFrame];
-    
-    [self addSubview:self.Dot];
-    if (messageCount > 0) {
+    if (dotMessage.length > 0) {
         self.Dot.hidden = NO;
-        self.Dot.text = @(messageCount).stringValue;
-    } else if (messageCount == 0)
-    {
-        self.Dot.hidden = NO;
-        self.Dot.text = @"";
-    } else
+        self.Dot.text = dotMessage;
+    } else if (!(dotMessage.length > 0))
     {
         self.Dot.hidden = YES;
     }
@@ -60,6 +53,7 @@ static char *dotSizeKey = "redDotSize";
         ml.layer.cornerRadius = defualtDotSize/2;
         ml.layer.backgroundColor = [UIColor redColor].CGColor;
         objc_setAssociatedObject(self, &DotKey, ml, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        [self addSubview:ml];
     }
     
     return ml;
@@ -96,6 +90,11 @@ static char *dotSizeKey = "redDotSize";
     oldFrame.origin.x = oldFrame.origin.x + edgeInset.x;
     oldFrame.origin.y = oldFrame.origin.y + edgeInset.y;
     self.Dot.frame = oldFrame;
+}
+
+- (void)setMessageFont:(UIFont *)messageFont
+{
+    self.Dot.font = messageFont;
 }
 
 @end

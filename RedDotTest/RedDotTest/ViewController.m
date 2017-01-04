@@ -24,28 +24,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _redDotView = [[RedDotView alloc] initWithMaxDistance:500 bubbleColor:[UIColor redColor]];
-    
-    self.btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 40, 20)];
-    
-    self.btn.backgroundColor = [UIColor greenColor];
-    self.btn.dotColor = [UIColor blackColor];
-    self.btn.messageCount = 0;
-    self.btn.dotSize = CGSizeMake(10, 10);
-    self.btn.edgeInset = CGPointMake(5, -5);
+    self.btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 70, 70)];
+    self.btn.messageFont = [UIFont systemFontOfSize:10];
+    self.btn.backgroundColor = [UIColor blueColor];
+    self.btn.dotMessage = @"123";
+    self.btn.edgeInset = CGPointMake(10, -10);
     [self.view addSubview:self.btn];
-    
-    [_redDotView attach:self.btn withSeparateBlock:^BOOL(UIView *view) {
-        NSLog(@"红色消失: %@", view);
-        return YES;
-    }];
-    
-    NSLog(@"btn.message: %zd", self.btn.messageCount);
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    self.btn.messageCount = self.tf.text.integerValue;
+    self.btn.dotMessage = self.tf.text;
 }
 
 

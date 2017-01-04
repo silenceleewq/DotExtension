@@ -9,11 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (SLDot)
-/**
- Dot's number
- */
-@property (nonatomic, assign) NSInteger messageCount;
 
+
+/**
+ Dot's message's font.
+ */
+@property (nonatomic, strong) UIFont *messageFont;
+
+/**
+ Dot's message
+ */
+@property (nonatomic, strong) NSString *dotMessage;
 
 /**
  Dot's size
