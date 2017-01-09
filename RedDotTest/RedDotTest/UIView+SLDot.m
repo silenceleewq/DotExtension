@@ -31,8 +31,13 @@ static char *dotSizeKey = "redDotSize";
     objc_setAssociatedObject(self, &dotMessageKey, dotMessage, OBJC_ASSOCIATION_ASSIGN);
     
     if (dotMessage.length > 0) {
+        if ([dotMessage isEqualToString:@"0"]) {
+            self.Dot.text = @"";
+        } else {
+            self.Dot.text = dotMessage;
+        }
         self.Dot.hidden = NO;
-        self.Dot.text = dotMessage;
+        
     } else if (!(dotMessage.length > 0))
     {
         self.Dot.hidden = YES;

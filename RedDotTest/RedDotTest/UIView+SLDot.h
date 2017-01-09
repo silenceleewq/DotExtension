@@ -18,6 +18,7 @@
 
 /**
  Dot's message
+ @discussion zero indicate that just a red dot without message.
  */
 @property (nonatomic, strong) NSString *dotMessage;
 
