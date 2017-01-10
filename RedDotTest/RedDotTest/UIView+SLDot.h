@@ -14,24 +14,24 @@
 /**
  Dot's message's font.
  */
-@property (nonatomic, strong) UIFont *messageFont;
+@property (nonatomic, strong) UIFont *sl_messageFont;
 
 /**
  Dot's message
  @discussion zero indicate that just a red dot without message.
  */
-@property (nonatomic, strong) NSString *dotMessage;
+@property (nonatomic, strong) NSString *sl_dotMessage;
 
 /**
  Dot's size
  */
-@property (nonatomic, assign) CGSize dotSize;
+@property (nonatomic, assign) CGSize sl_dotSize;
 
 
 /**
  Dot's Color
  */
-@property (nonatomic, strong) UIColor *dotColor;
+@property (nonatomic, strong) UIColor *sl_dotColor;
 
 
 /**
@@ -39,6 +39,11 @@
  positive x value is go right nagetive is go left
  positive y value is go down negative is go up.
  */
-@property (nonatomic, assign) CGPoint edgeInset;
+@property (nonatomic, assign) CGPoint sl_dotEdgeInset;
+
+/*
+    whether use autoLayout.
+ */
+@property (nonatomic, assign, getter=isUseAutoLayout) BOOL useAutoLayout;
 
 @end

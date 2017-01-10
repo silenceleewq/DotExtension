@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "RedDotView.h"
 #import "UIView+SLDot.h"
+
+
 @interface ViewController ()
 
 @property (nonatomic, strong) UIButton *btn;
@@ -24,17 +26,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 70, 70)];
-    self.btn.messageFont = [UIFont systemFontOfSize:10];
-    self.btn.backgroundColor = [UIColor blueColor];
-    self.btn.dotMessage = @"123";
-    self.btn.edgeInset = CGPointMake(10, -10);
-    [self.view addSubview:self.btn];
+//    self.btn = [[UIButton alloc] init];
+//    self.btn.messageFont = [UIFont systemFontOfSize:10];
+//    self.btn.backgroundColor = [UIColor blueColor];
+//    self.btn.dotMessage = @"123";
+//    self.btn.edgeInset = CGPointMake(10, -10);
+//    [self.view addSubview:self.btn];
+    
+    UIView *v = [[UIView alloc] init];
+    v.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:v];
+    
+    [v mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.height.equalTo(100);
+        make.center.equalTo(self.view);
+    }];
+    v.sl_dotMessage = @"1";
+    v.sl_dotEdgeInset = CGPointMake(5, -5);
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    self.btn.dotMessage = self.tf.text;
+    self.btn.sl_dotMessage = self.tf.text;
 }
 
 

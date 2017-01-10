@@ -20,9 +20,11 @@
 		00BB7FEB1E1B32590059FEEA /* red_dot_image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 00BB7FE61E1B32590059FEEA /* red_dot_image_4.png */; };
 		00BB7FEC1E1B32590059FEEA /* red_dot_image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 00BB7FE71E1B32590059FEEA /* red_dot_image_5.png */; };
 		00BB7FFA1E1BA8B30059FEEA /* UIView+SLDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BB7FF91E1BA8B30059FEEA /* UIView+SLDot.m */; };
+		E74065D511DB3FC14E016B00 /* libPods-RedDotTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5746450B0A0E1FE02A3810A6 /* libPods-RedDotTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		008CB8BA1E246B60004BBB74 /* RedDotTest.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedDotTest.pch; sourceTree = "<group>"; };
 		00BB7FC41E1B31DF0059FEEA /* RedDotTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedDotTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00BB7FC81E1B31DF0059FEEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00BB7FCA1E1B31DF0059FEEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,6 +44,9 @@
 		00BB7FE71E1B32590059FEEA /* red_dot_image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_dot_image_5.png; sourceTree = "<group>"; };
 		00BB7FF81E1BA8B30059FEEA /* UIView+SLDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SLDot.h"; sourceTree = "<group>"; };
 		00BB7FF91E1BA8B30059FEEA /* UIView+SLDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SLDot.m"; sourceTree = "<group>"; };
+		190D70C3449258D8936E8A1E /* Pods-RedDotTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedDotTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RedDotTest/Pods-RedDotTest.release.xcconfig"; sourceTree = "<group>"; };
+		5746450B0A0E1FE02A3810A6 /* libPods-RedDotTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RedDotTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F93A55AECE6A34B04B25A48 /* Pods-RedDotTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedDotTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RedDotTest/Pods-RedDotTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E74065D511DB3FC14E016B00 /* libPods-RedDotTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +66,8 @@
 			children = (
 				00BB7FC61E1B31DF0059FEEA /* RedDotTest */,
 				00BB7FC51E1B31DF0059FEEA /* Products */,
+				39F1CF602A06633C68ABA10D /* Pods */,
+				D042B93131030D1C099C8A8C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				00BB7FC81E1B31DF0059FEEA /* main.m */,
+				008CB8BA1E246B60004BBB74 /* RedDotTest.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -120,6 +129,23 @@
 			path = RedDotImage;
 			sourceTree = "<group>";
 		};
+		39F1CF602A06633C68ABA10D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F93A55AECE6A34B04B25A48 /* Pods-RedDotTest.debug.xcconfig */,
+				190D70C3449258D8936E8A1E /* Pods-RedDotTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D042B93131030D1C099C8A8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5746450B0A0E1FE02A3810A6 /* libPods-RedDotTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,9 +153,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00BB7FDB1E1B31DF0059FEEA /* Build configuration list for PBXNativeTarget "RedDotTest" */;
 			buildPhases = (
+				0F097226CA5E86859C3B28D7 /* [CP] Check Pods Manifest.lock */,
 				00BB7FC01E1B31DF0059FEEA /* Sources */,
 				00BB7FC11E1B31DF0059FEEA /* Frameworks */,
 				00BB7FC21E1B31DF0059FEEA /* Resources */,
+				97DC6AF7A0BDCFB0EA8A82B6 /* [CP] Embed Pods Frameworks */,
+				8520A380129380E88DC0273F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +220,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F097226CA5E86859C3B28D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8520A380129380E88DC0273F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RedDotTest/Pods-RedDotTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97DC6AF7A0BDCFB0EA8A82B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RedDotTest/Pods-RedDotTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		00BB7FC01E1B31DF0059FEEA /* Sources */ = {
@@ -317,9 +394,11 @@
 		};
 		00BB7FDC1E1B31DF0059FEEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F93A55AECE6A34B04B25A48 /* Pods-RedDotTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B5G9R9WR6W;
+				GCC_PREFIX_HEADER = ./RedDotTest/RedDotTest.pch;
 				INFOPLIST_FILE = RedDotTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.own.RedDotTest;
@@ -329,9 +408,11 @@
 		};
 		00BB7FDD1E1B31DF0059FEEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 190D70C3449258D8936E8A1E /* Pods-RedDotTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B5G9R9WR6W;
+				GCC_PREFIX_HEADER = ./RedDotTest/RedDotTest.pch;
 				INFOPLIST_FILE = RedDotTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.own.RedDotTest;
